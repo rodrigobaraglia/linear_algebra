@@ -9,7 +9,7 @@ sumVec':: Num b => [b] -> [b] -> [b]
 sumVec' a b  = map (\pair -> fst pair + snd pair) $ zip a b 
 
 
---Dot product:
+--Dot product (ordered from less to more verbose implementations):
 dotProd:: Num a => [a] -> [a] -> a
 dotProd a b = sum $ zipWith (*) a b
 
